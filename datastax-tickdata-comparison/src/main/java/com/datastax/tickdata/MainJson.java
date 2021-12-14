@@ -1,7 +1,6 @@
 package com.datastax.tickdata;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
@@ -16,7 +15,6 @@ import org.slf4j.LoggerFactory;
 import com.datastax.demo.utils.PropertyHelper;
 import com.datastax.demo.utils.Timer;
 import com.datastax.tickdata.engine.TickGenerator;
-import com.datastax.tickdata.model.TickData;
 import com.datastax.timeseries.model.TimeSeries;
 
 public class MainJson {

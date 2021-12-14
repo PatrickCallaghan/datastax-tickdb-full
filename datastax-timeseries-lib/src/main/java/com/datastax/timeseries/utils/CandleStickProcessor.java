@@ -6,12 +6,12 @@ import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cern.colt.list.DoubleArrayList;
-
 import com.datastax.timeseries.model.CandleStick;
 import com.datastax.timeseries.model.CandleStickSeries;
 import com.datastax.timeseries.model.Periodicity;
 import com.datastax.timeseries.model.TimeSeries;
+
+import cern.colt.list.DoubleArrayList;
 
 public class CandleStickProcessor {
 	private static Logger logger = LoggerFactory.getLogger(CandleStickProcessor.class);

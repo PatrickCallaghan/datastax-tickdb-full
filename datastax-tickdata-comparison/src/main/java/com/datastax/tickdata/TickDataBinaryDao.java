@@ -8,9 +8,6 @@ import java.text.SimpleDateFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cern.colt.list.DoubleArrayList;
-import cern.colt.list.LongArrayList;
-
 import com.datastax.demo.utils.PropertyHelper;
 import com.datastax.driver.core.BoundStatement;
 import com.datastax.driver.core.Cluster;
@@ -22,6 +19,9 @@ import com.datastax.driver.core.Session;
 import com.datastax.driver.core.policies.DowngradingConsistencyRetryPolicy;
 import com.datastax.driver.core.policies.LoggingRetryPolicy;
 import com.datastax.timeseries.model.TimeSeries;
+
+import cern.colt.list.DoubleArrayList;
+import cern.colt.list.LongArrayList;
 
 public class TickDataBinaryDao {
 	
