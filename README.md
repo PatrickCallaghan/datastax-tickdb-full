@@ -19,7 +19,7 @@ The queries that we want to be able to run is
 
      select * from tick_data where symbol ='NASDAQ-AAPL-2021-01-31';
 
-     select * from tick_data where symbol ='NASDAQ-AAPL-2021-01-31' and date > '2021-01-01 14:45:00' and date < '2014-01-01 15:00:00';
+     select * from tick_data where symbol ='NASDAQ-AAPL-2021-01-31' and date > '2021-01-01 14:45:00' and date < '2021-01-01 15:00:00';
 
 ## Data
 
