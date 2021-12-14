@@ -17,9 +17,9 @@ The queries that we want to be able to run is
 
 1. Get all the tick data for a symbol in an exchange (in a time range)
 
-     select * from tick_data where symbol ='NASDAQ-NFLX-2014-01-31';
+     select * from tick_data where symbol ='NASDAQ-AAPL-2021-01-31';
 
-     select * from tick_data where symbol ='NASDAQ-NFLX-2014-01-31' and date > '2014-01-01 14:45:00' and date < '2014-01-01 15:00:00';
+     select * from tick_data where symbol ='NASDAQ-AAPL-2021-01-31' and date > '2021-01-01 14:45:00' and date < '2014-01-01 15:00:00';
 
 ## Data
 
@@ -57,7 +57,7 @@ To run the insert of historic data, run (change noOfDays to the number of histor
 
 To read a ticker
 
-	  mvn clean compile exec:java -Dexec.mainClass="com.datastax.tickdata.Read" (-Dsymbol=NASDAQ-AAPL-2015-09-16)
+	  mvn clean compile exec:java -Dexec.mainClass="com.datastax.tickdata.Read" (-Dsymbol=NASDAQ-AAPL-2021-09-16)
 
 
 ### For Binary
@@ -69,7 +69,7 @@ To run the insert of historic data, run (change noOfDays to the number of histor
 
 To read a ticker
 
-	  mvn clean compile exec:java -Dexec.mainClass="com.datastax.tickdata.ReadBinary" (-Dsymbol=NASDAQ-AAPL-2015-09-16)
+	  mvn clean compile exec:java -Dexec.mainClass="com.datastax.tickdata.ReadBinary" (-Dsymbol=NASDAQ-AAPL-2021-09-16)
 
 ### For JSON
 
@@ -80,7 +80,7 @@ To run the insert of historic data, run (change noOfDays to the number of histor
 
 To read a ticker
 
-	  mvn clean compile exec:java -Dexec.mainClass="com.datastax.tickdata.ReadJson" (-Dsymbol=NASDAQ-AAPL-2015-09-16)
+	  mvn clean compile exec:java -Dexec.mainClass="com.datastax.tickdata.ReadJson" (-Dsymbol=NASDAQ-AAPL-2021-09-16)
 
 
 
@@ -96,15 +96,15 @@ Todays data
 
 To and From dates
 
-    http://localhost:7001/datastax-tickdb/rest/tickdb/get/bydatetime/NASDAQ/AAPL/20150914000000/20150917000000
+    http://localhost:7001/datastax-tickdb/rest/tickdb/get/bydatetime/NASDAQ/AAPL/20210914000000/20210917000000
 
 To and from dates broken into minute chunks
 
-    http://localhost:7001/datastax-tickdb/rest/tickdb/get/bydatetime/NASDAQ/AAPL/20150914000000/20150917000000/MINUTE
+    http://localhost:7001/datastax-tickdb/rest/tickdb/get/bydatetime/NASDAQ/AAPL/20210914000000/20210917000000/MINUTE
 
 To and from dates broken into minute chunks and shown as candlesticks
 
-    http://localhost:7001/datastax-tickdb/rest/tickdb/get/candlesticks/NASDAQ/AAPL/20150914000000/20150917000000/MINUTE_5
+    http://localhost:7001/datastax-tickdb/rest/tickdb/get/candlesticks/NASDAQ/AAPL/20210914000000/20210917000000/MINUTE_5
 
 ### Services
 
@@ -118,7 +118,7 @@ For a specific symbol and todays date, run daily conversion of tick data to bina
 
 For a specific symbol and date, run daily conversion of tick data to binary data for long term storage and retrieval
 
-    http://localhost:7001/datastax-tickdb/rest/tickdb/get/rundailyconversionbysymbolanddate/NASDAQ/AAPL/20150917000000
+    http://localhost:7001/datastax-tickdb/rest/tickdb/get/rundailyconversionbysymbolanddate/NASDAQ/AAPL/20210917000000
 
 
 ### Notes
