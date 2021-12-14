@@ -41,7 +41,7 @@ public class TimeSeriesJsonReader implements Future<TimeSeries> {
 			t.interrupt();
 			return true;
 		}else{
-			t.destroy();
+			t.stop();
 			return true;
 		}			
 	}

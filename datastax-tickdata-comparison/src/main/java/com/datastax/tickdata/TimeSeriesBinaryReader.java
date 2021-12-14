@@ -42,7 +42,7 @@ public class TimeSeriesBinaryReader implements Future<TimeSeries> {
 			t.interrupt();
 			return true;
 		}else{
-			t.destroy();
+			t.stop();
 			return true;
 		}			
 	}

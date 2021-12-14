@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>com.datastax.cassandra</groupId>
 			<artifactId>cassandra-driver-core</artifactId>
-			<version>3.1.0</version>
+			<version>3.11.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
@@ -65,7 +65,7 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.0.9</version>
+			<version>1.2.0</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -81,8 +81,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>
