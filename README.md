@@ -15,7 +15,7 @@ This demo uses quite a lot of memory so it is worth setting the MAVEN_OPTS to ru
 
 The queries that we want to be able to run is
 
-1. Get all the tick data for a symbol in an exchange (in a time range)
+	1. Get all the tick data for a symbol in an exchange (in a time range)
 
      select * from tick_data where symbol ='NASDAQ-AAPL-2021-01-31';
 
